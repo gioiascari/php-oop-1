@@ -2,19 +2,21 @@
 // è definita una classe ‘Movie’
     class Movie {
         // => all'interno della classe sono dichiarate delle variabili d'istanza
+        public $path;
         public $title;
         public $director;
         public $genre;
         public $year;
 
 
+
         // => all'interno della classe è definito un costruttore
         public function __construct($title, $director, $genre, $year) {
-            
             $this ->title = $title;
             $this->director = $director;
             $this->genre = $genre;
             $this->year = $year;
+            
             
     }
         // => all'interno della classe è definito almeno un metodo
@@ -27,11 +29,13 @@
 
     // vengono istanziati almeno due oggetti ‘Movie’
     $movies=[
-        new Movie('Interstellar', 'Christopher Nolan', 'science-fiction', 2014),
+        new Movie( 'Interstellar', 'Christopher Nolan', 'science-fiction', 2014),
+       
         new Movie('The Gift', 'Joel Edgerton', 'Psychological-thriller', 2015),
         new Movie('Spaceballs', 'Mel Brooks', 'Parodia', 1987),
 
     ];
+    
     
     
     // $movieTitle = new Movie('Interstellar');

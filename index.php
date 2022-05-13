@@ -31,7 +31,7 @@
             <div class="col-4">
                 
            
-                <div class="movies">
+                <div class="card " style="width: 18rem;">
                     <span>Title: </span> <h3>
                         <?= $movie -> getTitle(); ?>
                     </h3>
